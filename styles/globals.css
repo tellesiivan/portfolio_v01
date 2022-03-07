@@ -6,6 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #0d0d16;
 }
 
 a {
@@ -14,4 +15,28 @@ a {
 }
 * {
   box-sizing: border-box;
+}
+.navBlur {
+  backdrop-filter: saturate(180%) blur(10px);
+}
+.navGradient {
+  background: #ff0aff;
+  background: -webkit-radial-gradient(
+    circle farthest-corner at center center,
+    #ff0aff 0%,
+    #7b29ff 100%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at center center,
+    #ff0aff 0%,
+    #7b29ff 100%
+  );
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ff0aff 0%,
+    #7b29ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
 }
