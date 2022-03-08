@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       <AnimatedCursor
         innerSize={8}
         outerSize={25}
-        color="237, 253, 108"
+        color="209, 69, 209"
         outerAlpha={0.5}
         innerScale={1}
         outerScale={2}

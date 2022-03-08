@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div className="flex flex-row w-full h-screen">
       <TopNav />
-      <main className="mt-10 grow">{children}</main>
+      <main className="mx-4 md:mt-14 grow">{children}</main>
     </div>
   );
 }
