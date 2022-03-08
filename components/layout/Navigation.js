@@ -21,7 +21,7 @@ export default function Navigation() {
             className={
               currentPath === navItem.href
                 ? "bg-main-alt mr-4 list-none px-3 py-1 rounded-full text-sm"
-                : " mr-4 list-none text-text-main px-3 py-1 text-sm"
+                : " mr-4 list-none text-text-main px-3 py-1 text-sm "
             }
             key={navItem.name}
           >
