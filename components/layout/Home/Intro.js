@@ -1,35 +1,51 @@
 import Button from "../../reUsable/Button";
-import TwoRow from "../templates/twoRow";
+// @ts-ignore
+import TopBottom from "../templates/TopBottom";
 import { FaGithub, FaInstagram } from "react-icons/fa";
+
+import FadeIn from "react-fade-in";
 
 export default function HomeIntro() {
   const leftContent = (
-    <p className="text-xl font-light tracking-wide md:text-2xl ">
-      Hello! I’m Ivan Telles — UI focused Web Developer based in Placentia,
-      California 🏖 . Interested in classic Porsche&apos;s, User Interfaces, new
-      developement technology, desk set-up&apos;s, productivity & ethics.
-      Currently a Freelance Support ReactJS Developer, while contributing to new
-      side projects.
-    </p>
+    <div className="font-Karla">
+      <FadeIn delay={150}>
+        <h3 className="mb-2 text-6xl font-bold sm:text-7xl text-main-brightGreen">
+          react developer<span className="text-common-wht">.</span>
+        </h3>
+      </FadeIn>
+      <FadeIn delay={250}>
+        <p className="text-lg tracking-wide md:text-xl xl:text-3xl text-text-grey">
+          Hello! I&apos;m <span className="text-text-white">Ivan Telles</span> —
+          UI focused Web Developer based in Placentia, California 🏖. Interested
+          in classic Porsche&apos;s, User Interfaces, new developement
+          technology, desk set-up&apos;s, productivity & ethics. Currently a
+          Freelance Support{" "}
+          <span className="text-text-white">React Developer</span>, while
+          contributing to new side projects.
+        </p>
+      </FadeIn>
+    </div>
   );
 
   const rightContent = (
-    <div className="flex flex-row items-center w-full mt-5 md:flex-col md:mt-0">
+    <div className="flex items-center w-full mt-5">
       <Button
-        icon={<FaGithub size="1.5em" className="mr-3" />}
+        icon={<FaGithub size="1rem" className="mr-3" />}
         type={"fill"}
         text={"Github"}
-        styles="mr-2 md:mb-6 w-1/2"
+        styles="mr-2  md:w-auto"
         link="https://github.com/tellesiivan"
       />
       <Button
-        icon={<FaInstagram size="1.5em" className="mr-3" />}
+        icon={<FaInstagram size="1rem" className="mr-3" />}
         text="Instagram"
-        styles="w-1/2"
-        link="https://www.instagram.com/"
+        styles=" md:w-auto"
+        link="https://www.instagram.com/tellesiivan"
       />
     </div>
   );
 
-  return <TwoRow styles={"mt-28"} leftC={leftContent} rightC={rightContent} />;
+  return (
+    <TopBottom styles={"mt-24"} leftC={leftContent} rightC={rightContent} />
+  );
 }

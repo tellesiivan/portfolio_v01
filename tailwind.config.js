@@ -11,14 +11,22 @@ module.exports = {
     },
     colors: {
       main: {
-        main: "rgb(237, 253, 108)",
-        nav: "rgba(29,29,31,0.72)",
-        darkLight: "#32323229",
+        main: "#050606",
+        nav: "#26373770",
+        darkLight: "#181c1c",
+        dark: "#000",
+        accentDark: "#9191910a",
         alt: "#ddd",
+        brightGreen: "#0affb4",
       },
       text: {
+        white: "#fff",
         main: "#ddd",
         dark: "#0d0d16",
+        grey: "#a4a4a4",
+      },
+      common: {
+        wht: "#fff",
       },
     },
   },

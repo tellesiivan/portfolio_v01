@@ -5,10 +5,12 @@ export default function Button({ text, type, styles, icon, link }) {
     <Link href={link}>
       <a
         className={` ${
-          type === "fill" ? "bg-main-darkLight" : "border border-main-darkLight"
+          type === "fill"
+            ? "bg-main-accentDark"
+            : "border border-main-darkLight"
         } rounded-md ${
           styles ?? ""
-        } px-16 py-4  md:w-64 md:h-16 flex items-center justify-center link hover:bg-main-alt hover:text-text-dark `}
+        } px-8 text-sm py-2 flex items-center justify-center link font-Karla hover:bg-main-alt hover:text-text-dark `}
       >
         {icon ?? ""} {text}
       </a>
