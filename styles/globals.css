@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #0d0d16;
+  background-color: #050606;
 }
 
 a {
@@ -25,20 +25,26 @@ a {
   background: rgb(209, 69, 209);
   background: -webkit-radial-gradient(
     circle farthest-corner at center center,
-    #ff0aff 0%,
-    #7b29ff 100%
+    #0affb4 0%,
+    #29bdff 100%
   );
   background: -moz-radial-gradient(
     circle farthest-corner at center center,
-    #ff0aff 0%,
-    #7b29ff 100%
+    #0affb4 0%,
+    #29bdff 100%
   );
   background: radial-gradient(
     circle farthest-corner at center center,
-    #ff0aff 0%,
-    #7b29ff 100%
+    #0affb4 0%,
+    #29bdff 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 500;
+}
+.footer {
+  background: conic-gradient(
+    from 0.25turn at 25% 0%,
+    #ffd9ce,
+    rgba(#ffd9ce, 0) 50%
+  );
 }

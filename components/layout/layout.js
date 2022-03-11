@@ -3,9 +3,9 @@ import TopNav from "./TopNav";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-row w-full h-screen">
+    <div className="flex flex-row w-full">
       <TopNav />
-      <main className="mx-4 md:mt-14 grow">{children}</main>
+      <main>{children}</main>
     </div>
   );
 }
