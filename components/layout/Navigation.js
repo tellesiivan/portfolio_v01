@@ -15,13 +15,13 @@ export default function Navigation() {
 
   return (
     <>
-      <ul className="flex row">
+      <ul className="flex flex-row justify-around w-full md:w-fit">
         {navItems.map((navItem) => (
           <li
             className={
               currentPath === navItem.href
-                ? "bg-main-alt mr-4 list-none px-3 py-1 rounded-full text-sm"
-                : " mr-4 list-none text-text-main px-3 py-1 text-sm "
+                ? "bg-main-alt md:mr-4 list-none px-3 py-1 rounded-full text-sm w-1/4 md:w-auto text-center"
+                : " md:mr-4 list-none text-text-main px-3 py-1 text-sm w-1/4 md:w-auto text-center"
             }
             key={navItem.name}
           >

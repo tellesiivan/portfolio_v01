@@ -15,7 +15,7 @@ module.exports = {
         nav: "#26373770",
         darkLight: "#181c1c",
         dark: "#000",
-        accentDark: "#9191910a",
+        accentDark: "#272727",
         alt: "#ddd",
         brightGreen: "#0affb4",
       },
@@ -27,6 +27,7 @@ module.exports = {
       },
       common: {
         wht: "#fff",
+        blk: "#000",
       },
     },
   },
