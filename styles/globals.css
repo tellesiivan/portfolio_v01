@@ -9,6 +9,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: #050606;
+  transition: background-color 1s ease;
+}
+.whtBg {
+  background-color: #fff;
 }
 
 a {
