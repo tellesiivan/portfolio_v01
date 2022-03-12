@@ -12,10 +12,10 @@ module.exports = {
     colors: {
       main: {
         main: "#050606",
-        nav: "#26373770",
+        nav: "#3f3f3f70",
         darkLight: "#181c1c",
         dark: "#000",
-        accentDark: "#272727",
+        accentDark: "#68686826",
         alt: "#ddd",
         brightGreen: "#0affb4",
       },
@@ -27,6 +27,7 @@ module.exports = {
       },
       common: {
         wht: "#fff",
+        btnFill: "#212121",
         blk: "#000",
       },
     },

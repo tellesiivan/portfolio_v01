@@ -1,13 +1,15 @@
+import ApiSection from "./apiSection";
 import HomeIntro from "./Intro";
 import ShowCaseOne from "./showCaseOne";
-import ApiSample from "./ApiSample";
+import Workspace from "./workspace";
 
 export default function HomeContent() {
   return (
     <>
       <HomeIntro />
       <ShowCaseOne />
-      <ApiSample />
+      <Workspace />
+      <ApiSection />
     </>
   );
 }

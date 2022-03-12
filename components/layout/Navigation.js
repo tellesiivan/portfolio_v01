@@ -20,7 +20,7 @@ export default function Navigation() {
           <li
             className={
               currentPath === navItem.href
-                ? "bg-main-alt md:mr-4 list-none px-3 py-1 rounded-full text-sm w-1/4 md:w-auto text-center"
+                ? "bg-common-wht md:mr-4 list-none px-3 py-1 rounded-md text-sm w-1/4 md:w-auto text-center"
                 : " md:mr-4 list-none text-text-main px-3 py-1 text-sm w-1/4 md:w-auto text-center"
             }
             key={navItem.name}
