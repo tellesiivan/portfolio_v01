@@ -1,7 +1,12 @@
 import React from "react";
+import ProjectPage from "../components/layout/Projects";
 
 function Projects() {
-  return <div>projects</div>;
+  return (
+    <>
+      <ProjectPage />
+    </>
+  );
 }
 
 export default Projects;

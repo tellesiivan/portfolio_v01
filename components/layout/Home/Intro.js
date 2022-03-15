@@ -9,8 +9,8 @@ export default function HomeIntro() {
   const leftContent = (
     <div className="font-Karla">
       <FadeIn delay={150}>
-        <h3 className="mb-2 text-6xl font-bold sm:text-7xl text-main-brightGreen">
-          react developer<span className="text-common-wht">.</span>
+        <h3 className="mb-2 text-6xl font-bold sm:text-7xl text-common-wht">
+          react developer<span className="text-common-gold">.</span>
         </h3>
       </FadeIn>
       <FadeIn delay={250}>
@@ -35,12 +35,14 @@ export default function HomeIntro() {
         text={"Github"}
         styles="mr-2  md:w-auto"
         link="https://github.com/tellesiivan"
+        target="blank"
       />
       <Button
         icon={<FaInstagram size="1rem" className="mr-3" />}
         text="Instagram"
         styles=" md:w-auto"
         link="https://www.instagram.com/tellesiivan"
+        target="blank"
       />
     </div>
   );

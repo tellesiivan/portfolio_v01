@@ -29,6 +29,8 @@ module.exports = {
         wht: "#fff",
         btnFill: "#212121",
         blk: "#000",
+        gold: "#ffe435",
+        blue: "#1954ff",
       },
     },
   },
