@@ -1,12 +1,18 @@
 import { CalendarIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 
-export default function Item({ position }) {
+export default function ProjectListItem({ position }) {
   const slugURL = position.title.split(" ").join("-").toLowerCase();
 
   return (
     <li key={position.id}>
-      <Link href={`projects/${slugURL}?id=${position.id}`} passHref>
+      <Link
+        href={{
+          pathname: "/projects/[slug]",
+          query: { slug: `${slugURL}`, id: position.id },
+        }}
+        passHref
+      >
         <a className="block mb-3 rounded-md bg-main-darkLight">
           <div className="px-4 py-4 sm:px-6">
             <div className="flex items-center justify-between">

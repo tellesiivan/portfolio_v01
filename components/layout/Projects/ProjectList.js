@@ -1,4 +1,4 @@
-import Item from "./Item";
+import ProjectListItem from "./projectListItem";
 
 const positions = [
   {
@@ -68,7 +68,7 @@ export default function ProjectList() {
     <div className="mx-3 mt-4 overflow-hidden">
       <ul role="list">
         {positions.map((position) => (
-          <Item position={position} key={position.id} />
+          <ProjectListItem position={position} key={position.id} />
         ))}
       </ul>
     </div>

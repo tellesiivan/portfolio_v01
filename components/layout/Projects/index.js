@@ -6,9 +6,9 @@ export default function ProjectPage() {
     <>
       <div aria-hidden="true" className="relative">
         <img
-          src="https://images.unsplash.com/photo-1540584979-2ea916fb5010?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          src="https://images.unsplash.com/photo-1536852957183-5caa6c57b213?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt=""
-          className="object-cover object-center w-full h-96"
+          className="object-cover object-center w-full h-72 "
         />
         <div className="absolute inset-0 bg-gradient-to-t from-main-main" />
       </div>

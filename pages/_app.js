@@ -15,8 +15,8 @@ function MyApp({ Component, pageProps }) {
         outerSize={25}
         color="85, 85, 85"
         outerAlpha={0.5}
-        innerScale={1}
-        outerScale={2}
+        innerScale={0.7}
+        outerScale={1.4}
       />
     </Layout>
   );

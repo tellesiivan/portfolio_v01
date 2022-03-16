@@ -18,6 +18,7 @@ module.exports = {
         accentDark: "#68686826",
         alt: "#ddd",
         brightGreen: "#0affb4",
+        borderC: "#1c1c1c",
       },
       text: {
         white: "#fff",
