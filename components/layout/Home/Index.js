@@ -1,4 +1,3 @@
-import ApiSection from "./apiSection";
 import HomeIntro from "./Intro";
 import ShowCaseOne from "./showCaseOne";
 import Workspace from "./workspace";
@@ -8,8 +7,7 @@ export default function HomeContent() {
     <>
       <HomeIntro />
       <ShowCaseOne />
-      <Workspace />
-      <ApiSection />
+      {/* <Workspace /> */}
     </>
   );
 }

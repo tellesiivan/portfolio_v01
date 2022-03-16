@@ -65,13 +65,13 @@ export default function ShowCaseOne() {
 
   return (
     <div
-      className="h-auto p-4 mx-3 my-20 rounded-lg bg-main-accentDark"
+      className="h-auto p-4 mx-3 my-16 rounded-lg sm:mb-0 bg-common-blk"
       ref={containerRef}
     >
       <div className="flex flex-col items-end ml-auto text-right w-fit">
-        <p className="flex flex-row items-center px-3 py-1 text-sm rounded-md text-text-main bg-main-main w-fit">
-          <div className="w-4 h-4 mr-2 rounded-full bg-main-brightGreen"></div>{" "}
-          2021 — Current
+        <p className="flex flex-row items-center px-3 py-1 text-sm rounded-md text-text-main bg-main-accentDark w-fit">
+          <div className="w-4 h-4 mr-2 rounded-full bg-common-gold"></div> 2021
+          — Current
         </p>
         <h1 className="mt-2 text-2xl font-bold text-text-main ">
           Player Boost

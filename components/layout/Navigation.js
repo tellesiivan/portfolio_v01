@@ -29,7 +29,7 @@ export default function Navigation() {
               <a
                 className={
                   navItem.name === "AskWes" && currentPath !== "/askWes"
-                    ? "navGradient font-bold"
+                    ? "text-common-gold font-semibold"
                     : ""
                 }
               >
