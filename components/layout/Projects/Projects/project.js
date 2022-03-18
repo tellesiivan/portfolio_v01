@@ -19,7 +19,7 @@ const features = [
   },
 ];
 
-export default function Project({ id }) {
+export default function Project({ id, project }) {
   return (
     <>
       <div aria-hidden="true" className="relative">
@@ -34,7 +34,7 @@ export default function Project({ id }) {
       <div className="relative px-4 pb-16 mx-auto -mt-12 max-w-7xl sm:pb-24 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
           <h2 className="text-3xl font-extrabold tracking-tight text-common-wht sm:text-4xl">
-            Technical Specifications | {id}
+            {project.title}
           </h2>
           <p className="mt-4 text-text-grey">
             Organize is a system to keep your desk tidy and photo-worthy all day
