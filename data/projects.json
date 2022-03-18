@@ -1,0 +1,88 @@
+[
+  {
+    "id": "shja791a",
+    "title": "Player Boost",
+    "type": "Full-time",
+    "status": "Pending",
+    "fromTo": "2021 - present",
+    "tags": [
+      "ReactJS",
+      "Redux",
+      "FirebaseDB",
+      "TailwindCSS",
+      "Axios",
+      "FirebaseAuth",
+      "Git"
+    ],
+    "location": "ongoing",
+    "content": {
+      "copy": {
+        "desc": "Organize is a system to keep your desk tidy and photo-worthy all day long. Procrastinate your work while you meticulously arrange items into dedicated trays.",
+        "features": [
+          { "name": "Origin", "description": "Designed by Good Goods, Inc." },
+          {
+            "name": "Material",
+            "description": "Solid walnut base with rare earth magnets and polycarbonate add-ons."
+          },
+          { "name": "Dimensions", "description": "15 x 3.75 x .75" },
+          {
+            "name": "Finish",
+            "description": "Hand sanded and finished with natural oil"
+          },
+          {
+            "name": "Includes",
+            "description": "Pen Tray, Phone Tray, Small Tray, Large Tray, Sticky Note Holder"
+          },
+          {
+            "name": "Considerations",
+            "description": "Made from natural materials. Grain and color vary with each item."
+          }
+        ]
+      },
+      "links": {
+        "github": "http://github.com/",
+        "website": "http://"
+      }
+    }
+  },
+  {
+    "id": "hjd79123",
+    "title": "NBA Live",
+    "status": "Active",
+    "fromTo": "2022 - present",
+    "tags": [
+      "ReactJS",
+      "Redux",
+      "FirebaseDB",
+      "TailwindCSS",
+      "Axios",
+      "FirebaseAuth",
+      "Git"
+    ],
+    "type": "Full-time",
+    "location": "Remote",
+    "department": "Engineering",
+    "closeDate": "2020-01-07",
+    "closeDateFull": "January 7, 2020"
+  },
+  {
+    "id": "8jhklwe1",
+    "title": "Remote Me",
+    "status": "Inactive",
+    "fromTo": "2021",
+    "tags": [
+      "ReactJS",
+      "Redux",
+      "FirebaseDB",
+      "TailwindCSS",
+      "Axios",
+      "FirebaseAuth",
+      "Git"
+    ],
+    "type": "Full-time",
+    "location": "Remote",
+    "department": "Design",
+    "closeDate": "2020-01-14",
+    "closeDateFull": "January 14, 2020"
+  }
+]

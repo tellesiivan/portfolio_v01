@@ -33,6 +33,11 @@ module.exports = {
         gold: "#ffe435",
         blue: "#1954ff",
       },
+      status: {
+        pending: "#ffe435",
+        active: "#0affb4",
+        inactive: "#ea4c89",
+      },
     },
   },
   plugins: [],

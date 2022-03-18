@@ -4,6 +4,15 @@ import Link from "next/link";
 export default function ProjectListItem({ position }) {
   const slugURL = position.title.split(" ").join("-").toLowerCase();
 
+  function bgColor(color) {
+    if (color === "Active") {
+      return "bg-status-active";
+    } else if (color === "Pending") {
+      return "bg-status-pending";
+    }
+    return "bg-status-inactive";
+  }
+
   return (
     <li key={position.id}>
       <Link
@@ -20,7 +29,9 @@ export default function ProjectListItem({ position }) {
                 {position.title}
               </p>
               <div className="flex items-center flex-shrink-0 ml-1">
-                <div className="w-2 h-2 rounded-full bg-main-brightGreen"></div>
+                <div
+                  className={`w-2 h-2 rounded-full ${bgColor(position.status)}`}
+                ></div>
                 <p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
                   {position.status}
                 </p>
