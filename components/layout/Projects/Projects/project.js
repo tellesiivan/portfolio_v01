@@ -1,16 +1,20 @@
 import Head from "next/head";
-
+import Image from "next/image";
 export default function Project({ project }) {
+  const imgSrc = `/Images/projectImgs/${project.id}.jpg`;
+
   return (
     <>
       <Head>
         <title>{project.title}</title>
+        <meta name="description" content={project.content?.copy.desc} />
       </Head>
-      <div aria-hidden="true" className="relative">
-        <img
-          src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+      <div aria-hidden="true" className="relative h-96">
+        <Image
+          src={imgSrc}
           alt=""
-          className="object-cover object-center w-full h-96"
+          layout="fill"
+          className="object-cover object-center w-full h-96 "
         />
         <div className="absolute inset-0 bg-gradient-to-t from-main-main" />
       </div>

@@ -5,8 +5,7 @@ export default function notFound() {
     <div
       className="h-screen bg-cover bg-top sm:bg-top flex items-center justify-center relative"
       style={{
-        backgroundImage:
-          'url("https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")',
+        backgroundImage: 'url("./Images/fourOhfour.jpg")',
       }}
     >
       <div className="max-w-7xl mx-auto px-4 text-center sm:px-6 lg:px-8 z-20 text-common-wht ">
@@ -14,7 +13,7 @@ export default function notFound() {
           404 Error
         </h1>
         <p className="mt-2 text-lg font-medium text-opacity-50">
-          It looks like the page you’re looking for doesn't exist.
+          It looks like the page you’re looking for doesn&apos;t exist.
         </p>
         <div className="mt-6">
           <Link href="/">
