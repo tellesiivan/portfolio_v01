@@ -10,7 +10,7 @@ export default function HomeIntro() {
     <div className="font-Karla">
       <FadeIn delay={150}>
         <h3 className="mb-2 text-6xl font-bold sm:text-7xl text-common-wht">
-          react developer<span className="text-common-gold">.</span>
+          web developer<span className="text-common-gold">.</span>
         </h3>
       </FadeIn>
       <FadeIn delay={250}>

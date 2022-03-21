@@ -1,16 +1,11 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Project from "../../components/layout/Projects/Projects/project";
 import { allProjects, getSelectedProject } from "../../helper/projectUtil";
 
-export default function ProjectPage({ test }) {
-  const router = useRouter();
-  console.log(!test ? "loading..." : "project");
-  const { query } = router;
-
+export default function ProjectPage({ project }) {
   return (
     <>
-      <Project id={query.slug} project={test} />
+      <Project project={project} />
     </>
   );
 }
@@ -37,11 +32,23 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { params } = context;
 
-  const selectedProject = await getSelectedProject(params.pid);
+  try {
+    const selectedProject = await getSelectedProject(params.pid);
 
-  return {
-    props: {
-      test: selectedProject,
-    },
-  };
+    if (!selectedProject) {
+      return {
+        notFound: true,
+      };
+    }
+
+    return {
+      props: {
+        project: selectedProject,
+      },
+    };
+  } catch (error) {
+    return {
+      notFound: true,
+    };
+  }
 }
