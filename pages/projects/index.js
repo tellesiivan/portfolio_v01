@@ -1,13 +1,11 @@
 import React from "react";
 import ProjectPage from "../../components/layout/Projects";
-import { allProjects, getSelectedProject } from "../../helper/projectUtil";
+import { allProjects } from "../../helper/projectUtil";
 
-export default function Projects({ test }) {
-  const x = getSelectedProject("8jhklwe1");
-
+export default function Projects({ projects }) {
   return (
     <>
-      <ProjectPage projects={test} />
+      <ProjectPage projects={projects} />
     </>
   );
 }
@@ -18,7 +16,7 @@ export async function getStaticProps() {
   projects;
   return {
     props: {
-      test: projects,
+      projects,
     },
   };
 }
