@@ -3,7 +3,7 @@ import Typist from "react-text-typist";
 
 export default function Resume() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
+    <div className="flex items-center justify-center h-screen">
       <div>
         <Typist
           sentences={["Email me or download my resume", "</ thank you >"]}
