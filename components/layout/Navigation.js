@@ -10,7 +10,7 @@ export default function Navigation() {
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
     { name: "Resume", href: "/resume" },
-    { name: "AskWes", href: "/askWes" },
+    // { name: "AskWes", href: "/askWes" },
   ];
 
   return (
