@@ -19,6 +19,7 @@ module.exports = {
         alt: "#ddd",
         brightGreen: "#0affb4",
         borderC: "#1c1c1c",
+        flow: "#1f2938",
       },
       text: {
         white: "#fff",

@@ -16,9 +16,6 @@ export default function ProjectListItem({ position }) {
 
   return (
     <>
-      <Head>
-        <title>Projects</title>
-      </Head>
       <li key={position.id}>
         <Link
           href={{

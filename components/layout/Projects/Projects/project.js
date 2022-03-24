@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import TagList from "./TagList";
 export default function Project({ project }) {
   const imgSrc = `/Images/projectImgs/${project.id}.jpg`;
 
@@ -19,23 +20,19 @@ export default function Project({ project }) {
         <div className="absolute inset-0 bg-gradient-to-t from-main-main" />
       </div>
 
-      <div className="relative px-4 pb-16 mx-auto -mt-12 max-w-7xl sm:pb-24 sm:px-6 lg:px-8">
+      <div className="relative px-4 pb-10 mx-auto -mt-12 max-w-7xl sm:pb-14 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
           <h2 className="text-3xl font-extrabold tracking-tight text-common-wht sm:text-4xl">
             {project.title}
           </h2>
-          <p className="mt-4 text-text-grey">
-            Organize is a system to keep your desk tidy and photo-worthy all day
-            long. Procrastinate your work while you meticulously arrange items
-            into dedicated trays.
-          </p>
+          <p className="mt-4 text-text-grey">{project.content?.copy.desc}</p>
         </div>
 
-        <dl className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
+        <dl className="grid max-w-3xl grid-cols-1 mx-auto mt-16 gap-x-4 gap-y-4 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3 ">
           {project.content?.copy.features.map((feature) => (
             <div
               key={feature.name}
-              className="pt-8 border-t border-main-borderC"
+              className="bg-main-accentDark px-6 py-8 rounded-md"
             >
               <dt className="font-medium text-common-wht ">{feature.name}</dt>
               <dd className="mt-2 text-sm text-text-grey">
@@ -45,6 +42,7 @@ export default function Project({ project }) {
           ))}
         </dl>
       </div>
+      <TagList project={project} />
     </>
   );
 }

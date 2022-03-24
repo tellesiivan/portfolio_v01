@@ -65,13 +65,13 @@ export default function ShowCaseOne() {
 
   return (
     <div
-      className="h-auto p-4 mx-3 my-16 rounded-lg sm:mb-0 bg-common-blk"
+      className="h-auto p-4 mx-3 my-16 rounded-lg sm:mb-0 bg-main-accentDark"
       ref={containerRef}
     >
       <div className="flex flex-col items-end ml-auto text-right w-fit">
-        <p className="flex flex-row items-center px-3 py-1 text-sm rounded-md text-text-main bg-main-accentDark w-fit">
-          <div className="w-4 h-4 mr-2 rounded-full bg-common-gold"></div> 2021
-          — Current
+        <p className="flex flex-row items-center px-3 py-1 text-sm rounded-md text-text-main bg-main-main w-fit">
+          <div className="w-4 h-4 mr-2 rounded-full bg-status-active"></div>{" "}
+          2021 — Current
         </p>
         <h1 className="mt-2 text-2xl font-bold text-text-main ">
           Player Boost
@@ -90,12 +90,18 @@ export default function ShowCaseOne() {
         </div>
         <div className="w-full h-full text-justify md:w-6/12 ">
           <p className="text-md md:pl-4 text-text-grey">
-            I was in charge of design “Virtual Retailing” service for
-            dealerships, we build several industry breaking features such as
-            <span className="text-common-wht"> real-time payments</span> from
-            lenders and approval under 90 seconds, trade-in with conditions
-            evaluated to the pennies, checkout payments with Stripe integration.
-            You can see live product on one of our customer website Nalley BMW
+            Currently in charge of maintaining and debugging components
+            throughout the web app. More recently, focusing on creating{" "}
+            <span className="text-common-wht">
+              {" "}
+              reusable components &amp; custom hooks
+            </span>{" "}
+            with the goal of increasing performance. As well as continuing to
+            increase user experience by providing user triggered state actions
+            &amp; creating <span className="text-common-wht">
+              responsive
+            </span>{" "}
+            designs.
           </p>
         </div>
       </div>
