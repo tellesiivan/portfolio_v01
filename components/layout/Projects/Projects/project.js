@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import TagList from "./TagList";
+import { FiExternalLink } from "react-icons/fi";
+
 export default function Project({ project }) {
   const imgSrc = `/Images/projectImgs/${project.id}.jpg`;
 
@@ -13,7 +15,7 @@ export default function Project({ project }) {
       <div aria-hidden="true" className="relative h-96">
         <Image
           src={imgSrc}
-          alt=""
+          alt={project.title}
           layout="fill"
           className="object-cover object-center w-full h-96 "
         />
@@ -22,8 +24,18 @@ export default function Project({ project }) {
 
       <div className="relative px-4 pb-10 mx-auto -mt-12 max-w-7xl sm:pb-14 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
-          <h2 className="text-3xl font-extrabold tracking-tight text-common-wht sm:text-4xl">
-            {project.title}
+          <h2 className="text-3xl font-extrabold tracking-tight text-common-wht sm:text-4xl inline-flex text-center">
+            {project.title}{" "}
+            <a
+              href={project.content.links.website}
+              className="ml-3 flex items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {}
+
+              <FiExternalLink className="h-5 w-5 hover:text-status-inactive" />
+            </a>
           </h2>
           <p className="mt-4 text-text-grey">{project.content?.copy.desc}</p>
         </div>
