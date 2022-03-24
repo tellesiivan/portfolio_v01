@@ -90,12 +90,18 @@ export default function ShowCaseOne() {
         </div>
         <div className="w-full h-full text-justify md:w-6/12 ">
           <p className="text-md md:pl-4 text-text-grey">
-            I was in charge of design “Virtual Retailing” service for
-            dealerships, we build several industry breaking features such as
-            <span className="text-common-wht"> real-time payments</span> from
-            lenders and approval under 90 seconds, trade-in with conditions
-            evaluated to the pennies, checkout payments with Stripe integration.
-            You can see live product on one of our customer website Nalley BMW
+            Currently in charge of maintaining and debugging components
+            throughout the web app. More recently, focusing on creating{" "}
+            <span className="text-common-wht">
+              {" "}
+              reusable components &amp; custom hooks
+            </span>{" "}
+            with the goal of increasing performance. As well as continuing to
+            increase user experience by providing user triggered state actions
+            &amp; creating <span className="text-common-wht">
+              responsive
+            </span>{" "}
+            designs.
           </p>
         </div>
       </div>
